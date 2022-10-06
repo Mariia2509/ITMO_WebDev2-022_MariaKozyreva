@@ -7,7 +7,6 @@
     "preview": "vite preview --port 4173"
   },
   "dependencies": {
-    "carbon-web-components": "^1.21.0",
     "vue": "^3.2.38"
   },
   "devDependencies": {

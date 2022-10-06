@@ -1,0 +1,1 @@
+'carbon-web-components/es/components/input/index.js';
