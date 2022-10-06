@@ -1,50 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <link href="/vite.svg" rel="icon" type="image/svg+xml"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Vite App Welcome</title>
-    <link type="text/css" rel="stylesheet" href="./style.css">
-</head>
-<body class="bg-slate-500">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
 
-    <article class="flex flex-col md w-96 bg-neutral-50 p-6 mx-auto rounded-lg mt-12">
-    <header class="flex flex-row justify-between items-center">
-    <span style="content: url('https://api.iconify.design/icon-park-solid/youtube.svg?color=red&width=52');">icon</span>
-    <span class="px-4 py-1 bg-green-200 text-green-500 text-xs font-bold rounded-2xl h-full">Free</span>
-    </header>
+    <h1> Заголовок 1</h1>
+    <h2> Заголовок 2</h2>
+    <h3> Заголовок 3</h3>
+    <h4> Заголовок 4</h4>
+    <h5> Заголовок 5</h5>
+    <h6> Заголовок 6</h6>
+  <body>
+    <p><strong>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</strong>
+  </p>
+    <p><em>Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</em>
+  </p>
+    <p><u>Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</u>
+  </p>
+        Ненумерованный список
+        <ul>
+            <li>Текст 1</li>
+            <li>Текст 2 </li>
+            <li>Текст 3</li>
+        </ul>
+    Нумерованный список
+    <ol>
+        <li>Текст 1</li>
+        <li>Текст 2</li>
+        <li>Текст 3</li>
+    </ol>
+    Выпадающий список
+    <select>
+        <option>Выберите героя</option>
+        <option>Чебуршка</option>
+        <option>Крокодил Гена</option>
+        <option>Шапокляк</option>
+        <option>Крыска Лариска</option>
+    </select>
 
-        <main class="flex flex-col pt-12">
-            <section class="flex flex-col">
-                <div class="text-base">Videos</div>
-                <div class="text-3xl font-bold mt-2">Youtube</div>
-            </section>
-            <section class="flex flex-row mt-4">
-                <div class="basis-1/3">
-                    <h5 class="text-sm text-gray-700">Rating</h5>
-                    <h4 class="text-lg font-bold mt-1">5.0</h4>
-                </div>
-                <div class="basis-1/3">
-                    <h5 class="text-sm text-gray-700">Size</h5>
-                    <h4 class="text-lg font-bold mt-1">95.0 mb</h4>
-                </div>
-                <div class="basis-1/3">
-                    <h5 class="text-sm text-gray-700">Downloads</h5>
-                    <h4 class="text-lg font-bold mt-1">13.3m</h4>
-                </div>
-            </section>
-        </main>
-        <footer class="pt-10">
-
-            <span style="content: url('https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js');">icon</span>
-            text
-            image
-        </footer>
-    </article>
+    <p>Выберите предпочтительные способы связи:</p>
+    <input type="checkbox"
+           value='эл.почта'>
+    <label
+            for='contactChoice1'>эл.почта</label>
+    <input type="checkbox"
+           id='contactChoice2'
+           name='contact'
+           value='телефон'>
+    <label
+            for='contactChoice2'>телефон</label>
+    <input type="checkbox"
+           id='contactChoice3'
+           name='contact'
+           value='почта'>
+    <label
+            for='contactChoice3'>почта</label>
 
 
+        <p>Выберите предпочтительный способ связи:</p>
+        <input type="radio"
+            id='contactChoice1'
+        name='contact'
+        value='эл.почта'>
+            <label
+            for='contactChoice1'>эл.почта</label>
+    <input type="radio"
+           id='contactChoice2'
+           name='contact'
+           value='телефон'>
+    <label
+            for='contactChoice2'>телефон</label>
+    <input type="radio"
+           id='contactChoice3'
+           name='contact'
+           value='почта'>
+    <label
+            for='contactChoice3'>почта</label>
 
 
-</body>
+    <p><h3>Связаться со мной</h3>
+        <form>
+            <label for="name">Ваше имя:</label>
+           <input type="text" id="name"
+                  placeholder="Введите имя">
+                  <br>
+
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email"
+                   placeholder="Введите эл. адрес" >
+
+
+            <label for="password">Введите пароль:</label>
+            <input type="password" id="password"
+                   placeholder="Введите пароль" >
+            <br>
+            <label for="date">Укажите дату:</label>
+            <input type="date" id="date">
+
+        <p>
+            <input type="button" value="Нажми меня">
+        </p>
+    </form>
+
+        <table border='10'>
+            <thead>
+            <tr>
+                <th>Наименование фрукта</th>
+                <th>Количество</th>
+                <th>Цена/руб</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Апельсин</td>
+                <td>5</td>
+                <td>200</td>
+            </tr>
+            </tbody>
+            <tbody>
+            <tr>
+                <td>Яблоко</td>
+                <td>5</td>
+                <td>120</td>
+            </tr>
+            </tbody>
+            <tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2">Итого:</td>
+                    <td>320</td>
+                </tr>
+            </tfoot>
+        </table>
+    <p><img src="https://static.kulturologia.ru/files/u18476/cote.jpg" height="270" alt="котик">
+    </p>
+    <p><img src="https://seoportal.net/images/baza/izobrazheniya/svg/png-vs-svg.svg" height="150" alt="машина">
+    </p>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
